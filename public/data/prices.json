@@ -1,0 +1,86 @@
+[
+  {
+    "code": "7801610350409",
+    "commerce": "Super 9",
+    "price": 2000,
+    "date": ""
+  },
+  {
+    "code": "7802920007519",
+    "commerce": "Super 9",
+    "price": 1770,
+    "date": ""
+  },
+  {
+    "code": "7802910006690",
+    "commerce": "Super 9",
+    "price": 1840,
+    "date": ""
+  },
+  {
+    "code": "7802910007123",
+    "commerce": "Super 9",
+    "price": 1840,
+    "date": ""
+  },
+  {
+    "code": "7802910006515",
+    "commerce": "Super 9",
+    "price": 2790,
+    "date": ""
+  },
+  {
+    "code": "7802910007628",
+    "commerce": "Super 9",
+    "price": 2790,
+    "date": ""
+  },
+  {
+    "code": "7802910008304",
+    "commerce": "Super 9",
+    "price": 1650,
+    "date": ""
+  },
+  {
+    "code": "7801610350409",
+    "commerce": "Super 99",
+    "price": 2000,
+    "date": "10-08-2024"
+  },
+  {
+    "code": "7802920007519",
+    "commerce": "Super 99",
+    "price": 1770,
+    "date": "11-08-2024"
+  },
+  {
+    "code": "7802910006690",
+    "commerce": "Super 99",
+    "price": 1840,
+    "date": "12-08-2024"
+  },
+  {
+    "code": "7802910007123",
+    "commerce": "Super 99",
+    "price": 1840,
+    "date": "13-08-2024"
+  },
+  {
+    "code": "7802910006515",
+    "commerce": "otro",
+    "price": 2790,
+    "date": "14-08-2024"
+  },
+  {
+    "code": "7802910007628",
+    "commerce": "Super 9",
+    "price": 2790,
+    "date": "15-08-2024"
+  },
+  {
+    "code": "7802910008304",
+    "commerce": "Super 9",
+    "price": 1650,
+    "date": "16-08-2024"
+  }
+]

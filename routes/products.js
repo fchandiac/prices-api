@@ -23,6 +23,7 @@ router.get("/products/findAll", (req, res) => {
 });
 
 router.get("/products/load", (req, res) => {
+  console.log("Loading products...");
   readExcelFilesAndUpdateJsonProducts()
     .then((products) => {
       res.status(200).json({ message: "Products loaded successfully" });
@@ -34,18 +35,7 @@ router.get("/products/load", (req, res) => {
     });
 });
 
-// router.post("/products/filter", (req, res) => {
-//   const { hasPrices, page = 1, limit = 10, nameFilter, codeFilter, familyFilter } = req.body;
-//   // console.log('hasPrices:', hasPrices);
 
-//   getFilteredProducts({ hasPrices, nameFilter, codeFilter, familyFilter }, (err, products, totalPages) => {
-//       if (err) {
-//           res.status(500).json({ error: "Error fetching filtered products" });
-//       } else {
-//           res.json({ products, totalPages });
-//       }
-//   });
-// });
 
 router.post("/products/filter", (req, res) => {
   const { hasPrices, page = 1, limit = 10, nameFilter, codeFilter, familyFilter } = req.body;

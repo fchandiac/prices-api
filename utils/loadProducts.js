@@ -41,7 +41,7 @@ async function readExcelFilesAndUpdateJsonProducts() {
     console.log("Excel file read successfully.");
 
     const worksheet = workbook.worksheets[0];
-    const headers = worksheet.getRow(1).values.slice(1, 19); // Column A (1) to R (18)
+    const headers = worksheet.getRow(1).values.slice(1, 17); // Column A (1) to Qå (17)
 
     // Process rows in the Excel file
     worksheet.eachRow({ includeEmpty: true }, (row, rowNumber) => {

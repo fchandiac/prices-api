@@ -20,6 +20,15 @@ app.use( require('./routes/prices'));
 app.use( require('./routes/db'));
 app.use(require('./routes/upload'));
 
+const { initializeDatabase } = require('./db');
+initializeDatabase((err) => {
+  if (err) {
+    console.error("Database initialization failed.");
+  } else {
+    console.log("Database initialized successfully.");
+  }
+});
+
 
 
 // Ruta GET de prueba

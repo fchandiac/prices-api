@@ -2,7 +2,7 @@ const express = require('express');
 const fs = require('fs');
 const path = require('path');
 const router = express.Router();
-const { getAllPrices, getUniqueCommerces, getPricesByProductCode } = require('../db');
+const { getAllPrices, getUniqueCommerces, getPricesByProductCode, initializeDatabase } = require('../db');
 const { readExcelFilesAndUpdateJsonPrices } = require('../utils/loadPrices');
 
 // Ruta para agregar un nuevo elemento al JSON
@@ -77,9 +77,19 @@ router.get('/prices/commerces', (req, res) => {
 });
 
 router.get('/prices/load', (req, res) => {
+
     readExcelFilesAndUpdateJsonPrices()
         .then((prices) => {
             res.status(200).json({ message: 'Prices loaded successfully' });
+            
+            initializeDatabase((err) => {
+                if (err) {
+                    console.error('Database initialization failed.');
+                } else {
+                    console.log('Database initialized successfully.');
+                }
+            }
+            );
         })
         .catch((error) => {
             res.status(500).json({ error: 'Error loading prices', message: error.message });
